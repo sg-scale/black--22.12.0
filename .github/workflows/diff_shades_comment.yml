@@ -33,7 +33,7 @@ jobs:
       - name: Try to find pre-existing PR comment
         if: steps.metadata.outputs.needs-comment == 'true'
         id: find-comment
-        uses: peter-evans/find-comment@f4499a714d59013c74a08789b48abe4b704364a0
+        uses: peter-evans/find-comment@b30e6a3c0ed37e7c023ccd3f1db5c6c0b0c23aad
         with:
           issue-number: ${{ steps.metadata.outputs.pr-number }}
           comment-author: "github-actions[bot]"
